@@ -1,5 +1,6 @@
 {
 	"author": "Glen Maytum",
+	"description": "A web app that helps people to learn software projects",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
