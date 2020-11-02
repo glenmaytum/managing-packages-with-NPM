@@ -1,5 +1,5 @@
 {
-	"author" : "Glen Maytum",
+	"author": "Glen Maytum",
 	"name": "fcc-learn-npm-package-json",
 	"dependencies": {
 		"express": "^4.14.0"
@@ -9,7 +9,7 @@
 		"start": "node server.js"
 	},
 	"engines": {
-		"node": "8.11.2"
+		"node": "15.0.1"
 	},
 	"repository": {
 		"type": "git",
