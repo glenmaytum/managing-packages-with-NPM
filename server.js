@@ -25,9 +25,7 @@ if (!process.env.DISABLE_XORIGIN) {
 }
 
 
-app.use(express.static(__dirname + "/public"))
 
-app.use("/public", express.static(__dirname + "/public"))
 
 
 // app.use('/public', express.static(process.cwd() + '/public'));
@@ -61,10 +59,7 @@ app.use("/public", express.static(__dirname + "/public"))
 //   }  
 // })
 
-app.get("/", (req,res) => {
-  let absolutePath = __dirname + "/views/index.html"
-  res.sendFile(absolutePath)
-})
+
 
 var port = process.env.PORT || 3000;
 bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, function(){
