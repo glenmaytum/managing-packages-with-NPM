@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var bGround = require('fcc-express-bground');
+require("dotenv").config()
 
 // --> 7)  Mount the Logger middleware here
 
@@ -29,7 +30,13 @@ app.use("/public", express.static(__dirname + "/public"))
 
 /** 5) serve JSON on a specific route */
 app.get("/json", (req, res) => {
-    res.json({"message": "Hello json"});
+    let message = "Hello json"
+    if(process.env.MESSAGE_STYLE === "uppercase") {
+        res.json({"message": message.toUpperCase()});
+    } else {
+        res.json({"message": message});
+    }
+  
   });
 /** 6) Use the .env file to configure the app */
 
