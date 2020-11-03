@@ -18,7 +18,10 @@ console.log("Hello World");
 // })
 
 /** 3) Serve an HTML file */
-
+// app.get("/", (req , res) => {
+//     let absolutePath = __dirname + "/views/index.html"
+//     res.sendFile(absolutePath)
+// })
 
 /** 4) Serve static assets  */
 
