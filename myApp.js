@@ -24,7 +24,7 @@ console.log("Hello World");
 // })
 
 /** 4) Serve static assets  */
-
+// app.use("/public", express.static(__dirname + "/public"));
 
 /** 5) serve JSON on a specific route */
 
